@@ -7,7 +7,7 @@ clean:
 
 docs-setup:
 	sphinx-quickstart --sep -p add_mult -a "Toru Tamaki" -r 0.1 --ext-autodoc -l en --extensions sphinx.ext.napoleon docs/
-	patch -p0 < conf.py.diff
+	patch -p0 < conf.py.diff.for_make
 docs:
 	sphinx-apidoc -f -o docs/source/ ./
 	sphinx-build -b html docs/source docs/build/html
