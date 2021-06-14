@@ -4,5 +4,5 @@ services:
   mypython:
     build: ./
     volumes:
-      - ./:/mnt
+      - ../:/mnt
     tty: true
