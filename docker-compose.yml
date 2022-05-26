@@ -4,6 +4,5 @@ services:
   mypython:
     build: ./
     volumes:
-      - ../:/mnt
+      - ./:/mnt
     tty: true
-    working_dir: /mnt/12_01_sphinx
