@@ -30,28 +30,28 @@ def myadd(a, b):
     return 0
 
 
-def mymult(a, b):
-    """aとbの積を計算する
+def mydiv(a, b):
+    """aとbの商を計算する
 
     Args:
         a (int): 1つ目の引数
         b (int): 2つ目の引数
 
     Returns:
-        int: aとbの積
+        int: aとbの商（a/b, 小数点以下切り捨て）
     """
 
     if a > 0 and b > 0:
-        return a * b
+        return a // b
 
     if a < 0 and b < 0:
-        return a * b
+        return a // b
 
     if a > 0 and b < 0:
-        return a * b
+        return a // b
 
     if a < 0 and b > 0:
-        return a * b
+        return a // b
 
     if a == 0:
         return 0
